@@ -71,7 +71,7 @@ namespace NumbersGameLab3
             {
                 if (int.TryParse(Console.ReadLine(), out int guess))
                 {
-                    if (guess > 0 && guess < maxNumber) // If guess is above 0 and smaller than max number
+                    if (guess > 0 && guess <= maxNumber) // If guess is above 0 and smaller than max number
                     {
                         return guess;
                     }
